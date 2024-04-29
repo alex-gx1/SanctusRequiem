@@ -20,4 +20,27 @@ public partial class MainWindow : Window
     {
         InitializeComponent();
     }
+    private void SearchViewItem_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+    {
+        MessageBox.Show("Вы нажали Поиск!");
+    }
+    private void DogItem_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+    {
+        MessageBox.Show("Вы нажали dog!");
+    }
+    
+    private void CatItem_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+    {
+        MessageBox.Show("Вы нажали Cat!");
+    }
+    
+    private void FishItem_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+    {
+        MessageBox.Show("Вы нажали Fish!");
+    }
+    
+    private void HamsterItem_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+    {
+        MessageBox.Show("Вы нажали Hamster!");
+    }
 }

@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SanctusRequiem"
+        xmlns:system="clr-namespace:System;assembly=System.Runtime"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid ShowGridLines="True">
@@ -31,9 +32,12 @@
         </Button>
 
         <!--Список-->
-        <ListView Grid.Column="0" Grid.Row="1" Background="SeaGreen" ScrollViewer.VerticalScrollBarVisibility="Auto">
-            
+        <ListView Grid.Column="0" Grid.Row="1" Background="DimGray" ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <ListViewItem Content="Поиск" HorizontalAlignment="Center" PreviewMouseDown="SearchViewItem_PreviewMouseDown"/>
+            <ListViewItem Content="Собаки" PreviewMouseDown="DogItem_PreviewMouseDown"/>
+            <ListViewItem Content="Коты" PreviewMouseDown="CatItem_PreviewMouseDown"/>
+            <ListViewItem Content="Рыбки" PreviewMouseDown="FishItem_PreviewMouseDown"/>
+            <ListViewItem Content="Хомячки" PreviewMouseDown="HamsterItem_PreviewMouseDown"/>
         </ListView>
-
     </Grid>
 </Window>
