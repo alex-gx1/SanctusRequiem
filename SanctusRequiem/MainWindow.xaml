@@ -7,7 +7,7 @@
         xmlns:system="clr-namespace:System;assembly=System.Runtime"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid ShowGridLines="True">
+    <Grid ShowGridLines="False">
         <!--Кол-во строк-->
         <Grid.RowDefinitions>
             <RowDefinition Height="0.1*"></RowDefinition>
@@ -21,10 +21,10 @@
         </Grid.ColumnDefinitions>
 
         <!--Кнопка меню-->
-        <Button Grid.Column="0" Grid.Row="0" Content="Menu">
+        <Button Grid.Column="0" Grid.Row="0" Content="Меню" Background="#3c3f41">
             <Button.ContextMenu>
                 <ContextMenu>
-                    <MenuItem Header="Language" />
+                    <MenuItem Header="👅 Language" />
                     <MenuItem Header="About Programm" />
                     <MenuItem Header="GitHub" />
                 </ContextMenu>
@@ -32,12 +32,25 @@
         </Button>
 
         <!--Список-->
-        <ListView Grid.Column="0" Grid.Row="1" Background="DimGray" ScrollViewer.VerticalScrollBarVisibility="Auto">
-            <ListViewItem Content="Поиск" HorizontalAlignment="Center" PreviewMouseDown="SearchViewItem_PreviewMouseDown"/>
-            <ListViewItem Content="Собаки" PreviewMouseDown="DogItem_PreviewMouseDown"/>
-            <ListViewItem Content="Коты" PreviewMouseDown="CatItem_PreviewMouseDown"/>
-            <ListViewItem Content="Рыбки" PreviewMouseDown="FishItem_PreviewMouseDown"/>
-            <ListViewItem Content="Хомячки" PreviewMouseDown="HamsterItem_PreviewMouseDown"/>
+        <ListView Grid.Column="0" Grid.Row="1" Background="#2b2b2b" ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="BorderThickness" Value="2" />
+                    <Setter Property="Foreground" Value="#b9bbbe" />
+                    <Setter Property="Padding" Value="6" />
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Goldenrod" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </ListView.ItemContainerStyle>
+            <ListViewItem Content="🔎 Поиск"  PreviewMouseDown="SearchViewItem_PreviewMouseDown"/>
+            <ListViewItem Content="🐕 Собаки" PreviewMouseDown="DogItem_PreviewMouseDown"/>
+            <ListViewItem Content="🐈 Коты" PreviewMouseDown="CatItem_PreviewMouseDown"/>
+            <ListViewItem Content="🐠 Рыбки" PreviewMouseDown="FishItem_PreviewMouseDown"/>
+            <ListViewItem Content="🐹 Хомячки" PreviewMouseDown="HamsterItem_PreviewMouseDown"/>
         </ListView>
     </Grid>
 </Window>
