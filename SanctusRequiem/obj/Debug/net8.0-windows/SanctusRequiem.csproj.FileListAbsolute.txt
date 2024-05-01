@@ -39,3 +39,4 @@ C:\Users\alex_\OneDrive\Рабочий стол\SanctusRequiem\SanctusRequiem\ob
 C:\Users\alex_\OneDrive\Рабочий стол\SanctusRequiem\SanctusRequiem\obj\Debug\net8.0-windows\SanctusRequiem.genruntimeconfig.cache
 C:\Users\alex_\OneDrive\Рабочий стол\SanctusRequiem\SanctusRequiem\obj\Debug\net8.0-windows\ref\SanctusRequiem.dll
 C:\Users\alex_\OneDrive\Рабочий стол\ProjectC#\SanctusRequiem\SanctusRequiem\obj\Debug\net8.0-windows\SanctusRequiem.sourcelink.json
+C:\Users\alex_\OneDrive\Рабочий стол\SanctusRequiem\SanctusRequiem\obj\Debug\net8.0-windows\SanctusRequiem.sourcelink.json

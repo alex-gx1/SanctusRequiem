@@ -46,11 +46,12 @@
                     </Style.Triggers>
                 </Style>
             </ListView.ItemContainerStyle>
-            <ListViewItem Content="🔎 Поиск"  PreviewMouseDown="SearchViewItem_PreviewMouseDown"/>
-            <ListViewItem Content="🐕 Собаки" PreviewMouseDown="DogItem_PreviewMouseDown"/>
-            <ListViewItem Content="🐈 Коты" PreviewMouseDown="CatItem_PreviewMouseDown"/>
-            <ListViewItem Content="🐠 Рыбки" PreviewMouseDown="FishItem_PreviewMouseDown"/>
-            <ListViewItem Content="🐹 Хомячки" PreviewMouseDown="HamsterItem_PreviewMouseDown"/>
+            <ListViewItem Content="Компановка"  PreviewMouseDown="SearchViewItem_PreviewMouseDown"/>
+            <ListViewItem Content="Элементы управления " PreviewMouseDown="DogItem_PreviewMouseDown"/>
+            <ListViewItem Content="Кисти" PreviewMouseDown="CatItem_PreviewMouseDown"/>
+            <ListViewItem Content="Команды" PreviewMouseDown="FishItem_PreviewMouseDown"/>
+            <ListViewItem Content="Ресурсы" PreviewMouseDown="HamsterItem_PreviewMouseDown"/>
         </ListView>
+        
     </Grid>
 </Window>

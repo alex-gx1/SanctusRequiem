@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alex_\\OneDrive\\Рабочий стол\\ProjectC#\\SanctusRequiem\\SanctusRequiem\\SanctusRequiem.csproj": {}
+    "C:\\Users\\alex_\\OneDrive\\Рабочий стол\\SanctusRequiem\\SanctusRequiem\\SanctusRequiem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alex_\\OneDrive\\Рабочий стол\\ProjectC#\\SanctusRequiem\\SanctusRequiem\\SanctusRequiem.csproj": {
+    "C:\\Users\\alex_\\OneDrive\\Рабочий стол\\SanctusRequiem\\SanctusRequiem\\SanctusRequiem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alex_\\OneDrive\\Рабочий стол\\ProjectC#\\SanctusRequiem\\SanctusRequiem\\SanctusRequiem.csproj",
+        "projectUniqueName": "C:\\Users\\alex_\\OneDrive\\Рабочий стол\\SanctusRequiem\\SanctusRequiem\\SanctusRequiem.csproj",
         "projectName": "SanctusRequiem",
-        "projectPath": "C:\\Users\\alex_\\OneDrive\\Рабочий стол\\ProjectC#\\SanctusRequiem\\SanctusRequiem\\SanctusRequiem.csproj",
+        "projectPath": "C:\\Users\\alex_\\OneDrive\\Рабочий стол\\SanctusRequiem\\SanctusRequiem\\SanctusRequiem.csproj",
         "packagesPath": "C:\\Users\\alex_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alex_\\OneDrive\\Рабочий стол\\ProjectC#\\SanctusRequiem\\SanctusRequiem\\obj\\",
+        "outputPath": "C:\\Users\\alex_\\OneDrive\\Рабочий стол\\SanctusRequiem\\SanctusRequiem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alex_\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -61,7 +61,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\alex_\\.dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
