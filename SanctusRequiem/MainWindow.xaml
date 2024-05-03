@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:SanctusRequiem"
         xmlns:system="clr-namespace:System;assembly=System.Runtime"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="WPF Documentation" Height="450" Width="800" Background="Gray">
+    
     <Grid ShowGridLines="False">
         <!--Кол-во строк-->
         <Grid.RowDefinitions>
@@ -21,21 +22,24 @@
         </Grid.ColumnDefinitions>
 
         <!--Кнопка меню-->
-        <Button Grid.Column="0" Grid.Row="0" Content="Меню" Background="#3c3f41">
-            <Button.ContextMenu>
-                <ContextMenu>
-                    <MenuItem Header="👅 Language" />
-                    <MenuItem Header="About Programm" />
-                    <MenuItem Header="GitHub" />
-                </ContextMenu>
-            </Button.ContextMenu>
-        </Button>
+        <Button x:Name="MenuButton" Grid.Column="0" Grid.Row="0" Content="Меню" Background="#3c3f41" Click="MenuButton_Click"/>
 
+        <!-- Панель Popup для контекстного меню -->
+        <Popup Grid.Column="0" Grid.Row="0" Name="ContextMenuPopup" PlacementTarget="{Binding ElementName=MenuButton}" Placement="Bottom" StaysOpen="False">
+            <Border Background="#3c3f41" BorderBrush="Black" BorderThickness="1">
+                <StackPanel>
+                    <Button Content="👅 Language" Click="MenuItem_Click" Background="#3c3f41" Foreground="#b9bbbe"/>
+                    <Button Content="About Programm" Click="MenuItem_Click" Background="#3c3f41" Foreground="#b9bbbe"/>
+                    <Button Content="GitHub" Click="GitHubButton_Click" Background="#3c3f41" Foreground="#b9bbbe"/>
+                </StackPanel>
+            </Border>
+        </Popup>
+        
         <!--Список-->
         <ListView Grid.Column="0" Grid.Row="1" Background="#2b2b2b" ScrollViewer.VerticalScrollBarVisibility="Auto">
             <ListView.ItemContainerStyle>
                 <Style TargetType="ListViewItem">
-                    <Setter Property="BorderThickness" Value="2" />
+                    <Setter Property="BorderThickness" Value="1" />
                     <Setter Property="Foreground" Value="#b9bbbe" />
                     <Setter Property="Padding" Value="6" />
                     <Setter Property="HorizontalContentAlignment" Value="Stretch" />
@@ -46,12 +50,11 @@
                     </Style.Triggers>
                 </Style>
             </ListView.ItemContainerStyle>
-            <ListViewItem Content="Компановка"  PreviewMouseDown="SearchViewItem_PreviewMouseDown"/>
+            <ListViewItem Content="Поиск" PreviewMouseDown="SearchViewItem_PreviewMouseDown"/>
+            <ListViewItem Content="Компановка" PreviewMouseDown="SearchViewItem_PreviewMouseDown"/>
             <ListViewItem Content="Элементы управления " PreviewMouseDown="DogItem_PreviewMouseDown"/>
             <ListViewItem Content="Кисти" PreviewMouseDown="CatItem_PreviewMouseDown"/>
             <ListViewItem Content="Команды" PreviewMouseDown="FishItem_PreviewMouseDown"/>
             <ListViewItem Content="Ресурсы" PreviewMouseDown="HamsterItem_PreviewMouseDown"/>
         </ListView>
-        
-    </Grid>
-</Window>
+    </Grid></Window>

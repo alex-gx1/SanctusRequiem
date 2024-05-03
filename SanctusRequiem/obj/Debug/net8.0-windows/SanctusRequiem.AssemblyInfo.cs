@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SanctusRequiem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e6367f57689e32c4258cab5ed1170dc839d0cc2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ce30c66ae034369c32e05d083a4f6828d507709")]
 [assembly: System.Reflection.AssemblyProductAttribute("SanctusRequiem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SanctusRequiem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
